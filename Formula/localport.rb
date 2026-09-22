@@ -1,28 +1,28 @@
 class Localport < Formula
   desc "Put any local service online over secure HTTP, TCP, TLS, and mTLS tunnels"
   homepage "https://localport.io"
-  version "0.6.0"
+  version "0.7.0"
   license "Apache-2.0"
 
   on_macos do
     on_arm do
       url "https://github.com/localport/agent/releases/download/v#{version}/localport-darwin-arm64"
-      sha256 "bdd9d6887306ff7322453e4d04833182688489dac922326eb2d3e24e6d7d2289"
+      sha256 "b9b5fd7b89b5ad63e91353b9b496ec079c6534a2619aaffd6d72d7c024bca5de"
     end
     on_intel do
       url "https://github.com/localport/agent/releases/download/v#{version}/localport-darwin-amd64"
-      sha256 "3d398585912d6a4a854c4a59399c620cdccb00519922c56db18f5155d74824e0"
+      sha256 "02ba2ac79668175d9ca93a938b211cd9f9d1295e4fa5c4b1b435dc77c3a8ca73"
     end
   end
 
   on_linux do
     on_arm do
       url "https://github.com/localport/agent/releases/download/v#{version}/localport-linux-arm64"
-      sha256 "89f8e846dee5112085f921b6402c83376fdb04310b0bfc9fddb09b5085d80968"
+      sha256 "6f78b5da907db80e4f8eaeef8ff3a1d91f71d78097f258dbec31817c7c731fdb"
     end
     on_intel do
       url "https://github.com/localport/agent/releases/download/v#{version}/localport-linux-amd64"
-      sha256 "cf04fa7f973c06a706adcbfe8b477ab5b7abcad8019e66e0879eb4592112764f"
+      sha256 "005a538e49ce4a97116a46751ecc5adfbd35e622e1c0b831705a49a65bbc79a6"
     end
   end
 
